@@ -36,16 +36,11 @@ categories: 程序猿的自我修养
 
 按照上面的教程一步一步来做的话，没有什么大的问题，但是还是会遇到一些坑。比如:
 
- **问题 **: 我们在编辑完站点的配置文件后,输入 `hexo depeloy`,显示`ERROR Deployer not found : github`
-
-   **解决办法**: 在站点配置文件_config.yml里面将`deploy`的`type`改成`git`，然后运行下`npm install hexo-deployer-git --save`
-再`hexo g`,在`hexo d`即可解决
-
-  
- ** 问题** : 编辑完站点配置文件_config.yml后，在终端中运行指令,会出现`FATAL YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 12, column 1`:
- 
- **解决办法**:检查_config.yml内容，`特别注意:后面需要有一个空格`,以后在写博客的时候，博客开头的，时间，日期冒号后面都得需要一个空格。
- 
+ |**问题**|**解决办法**|
+ |----|------|
+ | 我们在编辑完站点的配置文件后,输入 `hexo depeloy`,显示`ERROR Deployer not found : github`|在站点配置文件_config.yml里面将`deploy`的`type`改成`git`，然后运行下`npm install hexo-deployer-git --save`,再`hexo g`,再`hexo d`即可解决|
+ |编辑完站点配置文件_config.yml后，在终端中运行指令,会出现`FATAL YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 12, column 1`|检查_config.yml内容，`特别注意:后面需要有一个空格`,以后在写博客的时候，博客开头的，时间，日期冒号后面都得需要一个空格。|
+ |输入 `hexo s`后请求 `http://localhost:4000/`显示 `cannot get /`|在指定目录下重试安装hexo,也就是输入 `npm install hexo --save`指令|
 # 主题next的配置
 ***
 安装完hexo后，我们就有了自己的博客，是不是很简单呢？但是hexo默认的主题 `landscape`不是很好看，所以，我们需要给他换一个新的主题。`next` 在github上面star的数量是最多的，主题简洁清新，很受欢迎。详细的教程在 [next主题安装配置](http://theme-next.iissnan.com/)
@@ -54,6 +49,12 @@ categories: 程序猿的自我修养
 
 # 多台电脑写blog
 ***
-我们知道，hexo相当于是和GitHub绑定的，我们在本地写好blog，然后输入hexo 的几个命令，就能将本地的blog部署到github上面去，但是如果是在另外一台电脑上，写博客的话，应该怎么办呢？
+我们知道，hexo相当于是和GitHub绑定的，我们在本地写好blog，然后输入hexo 的几个命令，就能将本地的blog部署到github上面去，但是如果是在另外一台电脑上，写博客的话，应该怎么办呢？。这个是需要一点git的知识，了解git的分支。小编看的教程是
+[关于博客同步的解决办法](http://devtian.me/2015/03/17/blog-sync-solution/)，最终也解决了这个问题。
+
+# 啰嗦话
+***
+安装hexo网上的教程很多，在安装的过程中主要是耐心和细心。大家如果有不懂得问题，欢迎交流。
+
 
 
