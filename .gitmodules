@@ -1,0 +1,3 @@
+[submodule "source/_posts/hexo-theme-next"]
+	path = source/_posts/hexo-theme-next
+	url = https://github.com/pelsor/hexo-theme-next.git
